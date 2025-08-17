@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ErikCoding</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-circle">
+                        <img src="ErikCoding-LOGO-Black&White.png" alt="logo" width="35px" height="35px">
+                    </div>
+                    <span class="logo-text">ErikCoding</span>
+                </div>
+                <div class="header-right">
+                    <nav class="nav">
+                        <a href="#about" class="nav-link">O mnie</a>
+                        <a href="#projects" class="nav-link">Projekty</a>
+                        <a href="#contact" class="nav-link">Kontakt</a>
+                    </nav>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Przełącz motyw">
+                        <i class="fas fa-sun sun-icon"></i>
+                        <i class="fas fa-moon moon-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Cześć, jestem
+                        <span class="hero-name">Erik Lapczyk</span>
+                    </h1>
+                    <p class="hero-description">
+                        Full Stack Developer z pasją do tworzenia nowoczesnych aplikacji webowych. 
+                        Specjalizuję się w React, Node.js i technologiach cloud.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Skontaktuj się
+                        </button>
+                        <button class="btn btn-outline">
+                            <i class="fab fa-github"></i>
+                            Zobacz GitHub
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="IMG_0218.JPG" 
+                             alt="Jan Kowalski" class="profile-image" width="400" height="400">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Umiejętności</h2>
+                <p class="section-description">Technologie i narzędzia, z którymi pracuję na co dzień</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">HTML5</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Figma</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Moje Projekty</h2>
+                <p class="section-description">
+                    Wybrane prace, które najlepiej przedstawiają moje umiejętności i doświadczenie
+                </p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Bella-Beuty-Miniature-clean.png" 
+                             alt="Salon Kosmetyczny">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Salon Kosmetyczny "Bella Beauty"</h3>
+                        <p class="project-description">
+                            Elegancka, schludna oraz nowoczesna prototypowa strona internetowa salonu kosmetycznego.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-outline btn-sm" onclick="window.open('beauty.html', '_blank')">
+                                <i class="fab fa-github"></i>
+                                Kod
+                            </button>
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-external-link-alt"></i>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop" 
+                             alt="Task Management App">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            Aplikacja do zarządzania zadaniami z funkcjami współpracy zespołowej i raportowania.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-badge">Next.js</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Prisma</span>
+                            <span class="tech-badge">Tailwind</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i>
+                                Kod
+                            </button>
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-external-link-alt"></i>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop" 
+                             alt="Analytics Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Zaawansowany dashboard analityczny z wizualizacją danych w czasie rzeczywistym.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">D3.js</span>
+                            <span class="tech-badge">Express</span>
+                            <span class="tech-badge">MongoDB</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i>
+                                Kod
+                            </button>
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-external-link-alt"></i>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop" 
+                             alt="Mobile Banking App">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mobile Banking App</h3>
+                        <p class="project-description">
+                            Bezpieczna aplikacja bankowa z funkcjami transferów, historii transakcji i budżetowania.
+                        </p>
+                        <div class="project-technologies">
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">Redux</span>
+                            <span class="tech-badge">Expo</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i>
+                                Kod
+                            </button>
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-external-link-alt"></i>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skontaktuj się ze mną</h2>
+                <p class="section-description">
+                    Masz projekt do realizacji? Chętnie porozmawiam o współpracy
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="contact-title">Email</h3>
+                    <p class="contact-info">erikk777coding@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="contact-title">Telefon</h3>
+                    <p class="contact-info">+48 725 619 117</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="contact-title">Lokalizacja</h3>
+                    <p class="contact-info">Trójmiasto, Polska</p>
+                </div>
+            </div>
+            <div class="contact-buttons">
+                <button class="btn btn-outline btn-lg">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </button>
+                <button class="btn btn-outline btn-lg">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </button>
+                <button class="btn btn-primary btn-lg">
+                    <i class="fas fa-envelope"></i>
+                    Napisz do mnie
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="currentYear"></span> ErikCoding. Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
