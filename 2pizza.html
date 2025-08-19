@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Bella Vista [ErikCoding]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Dodano link do zewnętrznego pliku CSS -->
+    <link rel="stylesheet" href="2pizza.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo font-serif">Bella Vista</a>
+            <nav class="nav">
+                <a href="#menu">Menu</a>
+                <a href="#about">O nas</a>
+                <a href="#contact">Kontakt</a>
+                <a href="#" class="btn">Zamów</a>
+            </nav>
+            <button class="btn mobile-menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="font-serif">Pizzeria Bella Vista</h1>
+            <p>Autentyczna pizza włoska w sercu miasta</p>
+            <a href="#menu" class="btn btn-lg">Zamów teraz</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section section-bg">
+        <div class="container">
+            <h2 class="section-title font-serif">Nasze Specjalności</h2>
+            <div class="menu-grid">
+                <div class="pizza-card">
+                    <div class="pizza-image" style="background-image: url('https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                    <div class="pizza-content">
+                        <div class="pizza-header">
+                            <h3 class="pizza-name font-serif">Margherita Classica</h3>
+                            <span class="pizza-price">28 zł</span>
+                        </div>
+                        <p class="pizza-description">Sos pomidorowy, mozzarella fior di latte, świeża bazylia, oliwa z oliwek</p>
+                    </div>
+                </div>
+
+                <div class="pizza-card">
+                    <div class="pizza-image" style="background-image: url('https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                    <div class="pizza-content">
+                        <div class="pizza-header">
+                            <h3 class="pizza-name font-serif">Quattro Stagioni</h3>
+                            <span class="pizza-price">35 zł</span>
+                        </div>
+                        <p class="pizza-description">Sos pomidorowy, mozzarella, szynka, pieczarki, karczochy, oliwki</p>
+                    </div>
+                </div>
+
+                <div class="pizza-card">
+                    <div class="pizza-image" style="background-image: url('https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                    <div class="pizza-content">
+                        <div class="pizza-header">
+                            <h3 class="pizza-name font-serif">Diavola</h3>
+                            <span class="pizza-price">32 zł</span>
+                        </div>
+                        <p class="pizza-description">Sos pomidorowy, mozzarella, pikantne salami, papryczki chili</p>
+                    </div>
+                </div>
+
+                <div class="pizza-card">
+                    <div class="pizza-image" style="background-image: url('https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                    <div class="pizza-content">
+                        <div class="pizza-header">
+                            <h3 class="pizza-name font-serif">Prosciutto e Funghi</h3>
+                            <span class="pizza-price">38 zł</span>
+                        </div>
+                        <p class="pizza-description">Sos pomidorowy, mozzarella, prosciutto di Parma, świeże pieczarki</p>
+                    </div>
+                </div>
+
+                <div class="pizza-card">
+                    <div class="pizza-image" style="background-image: url('https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                    <div class="pizza-content">
+                        <div class="pizza-header">
+                            <h3 class="pizza-name font-serif">Capricciosa</h3>
+                            <span class="pizza-price">36 zł</span>
+                        </div>
+                        <p class="pizza-description">Sos pomidorowy, mozzarella, szynka, pieczarki, karczochy, oliwki, jajko</p>
+                    </div>
+                </div>
+
+                <div class="pizza-card">
+                    <div class="pizza-image" style="background-image: url('https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                    <div class="pizza-content">
+                        <div class="pizza-header">
+                            <h3 class="pizza-name font-serif">Quattro Formaggi</h3>
+                            <span class="pizza-price">34 zł</span>
+                        </div>
+                        <p class="pizza-description">Mozzarella, gorgonzola, parmigiano reggiano, pecorino romano</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title font-serif">Nasza Historia</h2>
+            <div class="about-grid">
+                <div>
+                    <p class="about-text">
+                        Od ponad 20 lat serwujemy najlepszą pizzę w mieście. Nasze przepisy pochodzą prosto z Neapolu, a każda pizza jest przygotowywana ręcznie z najświeższych składników.
+                    </p>
+                    <p class="about-text">
+                        Nasz piec opalany drewnem nadaje pizzy niepowtarzalny smak i aromat, który sprawia, że goście wracają do nas od lat.
+                    </p>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star-partial">★</span>
+                    </div>
+                    <p class="rating-text">Średnia ocena: 4.9/5 na podstawie 847 opinii</p>
+                </div>
+                <div class="about-image" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-bg">
+        <div class="container">
+            <h2 class="section-title font-serif">Kontakt i Lokalizacja</h2>
+            <div class="contact-grid">
+                <div>
+                    <div class="contact-item">
+                        <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <div>
+                            <h3 class="contact-title">Adres</h3>
+                            <p class="contact-text">
+                                ul. Włoska 15<br>
+                                00-001 Warszawa
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <div>
+                            <h3 class="contact-title">Telefon</h3>
+                            <p class="contact-text">+48 22 123 45 67</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                        <div>
+                            <h3 class="contact-title">Godziny otwarcia</h3>
+                            <div class="contact-text">
+                                <p>Poniedziałek - Czwartek: 12:00 - 22:00</p>
+                                <p>Piątek - Sobota: 12:00 - 23:00</p>
+                                <p>Niedziela: 13:00 - 21:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-image" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3 class="font-serif">Pizzeria Bella Vista</h3>
+            <p>Autentyczna pizza włoska w sercu miasta</p>
+            <div class="footer-divider">
+                <p class="footer-copyright">© 2025 ErikCoding. Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dodano link do zewnętrznego pliku JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
