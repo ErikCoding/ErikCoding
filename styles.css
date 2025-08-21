@@ -336,7 +336,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin-left: 24%;
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogrodnik Pro - Profesjonalne Usługi Ogrodnicze</title>
+    <meta name="description" content="Kompleksowe usługi ogrodnicze - projektowanie, pielęgnacja i utrzymanie ogrodów. Zaufaj profesjonalistom!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="3ogrodnik.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                    </svg>
+                    <span class="logo-text">Ogrodnik Pro</span>
+                </div>
+                <div class="desktop-menu">
+                    <button data-section="home" class="nav-link">Strona Główna</button>
+                    <button data-section="services" class="nav-link">Usługi</button>
+                    <button data-section="about" class="nav-link">O Nas</button>
+                    <button data-section="gallery" class="nav-link">Galeria</button>
+                    <button data-section="contact" class="nav-link">Kontakt</button>
+                </div>
+                <div class="mobile-menu-button">
+                    <button class="menu-toggle">
+                        <svg id="menu-icon" class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="4" x2="20" y1="6" y2="6"/>
+                            <line x1="4" x2="20" y1="12" y2="12"/>
+                            <line x1="4" x2="20" y1="18" y2="18"/>
+                        </svg>
+                        <svg id="close-icon" class="menu-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m18 6-12 12"/>
+                            <path d="m6 6 12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <button data-section="home" class="nav-link">Strona Główna</button>
+                <button data-section="services" class="nav-link">Usługi</button>
+                <button data-section="about" class="nav-link">O Nas</button>
+                <button data-section="gallery" class="nav-link">Galeria</button>
+                <button data-section="contact" class="nav-link">Kontakt</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Ogrodnik Pro</h1>
+            <p class="hero-subtitle">Profesjonalne usługi ogrodnicze dla Twojego wymarzonego ogrodu</p>
+            <div class="hero-buttons">
+                <button data-section="contact" class="btn-primary">Skontaktuj się z nami</button>
+                <button data-section="services" class="btn-secondary">Zobacz nasze usługi</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nasze Usługi</h2>
+                <p class="section-subtitle">Oferujemy kompleksowe usługi ogrodnicze dostosowane do Twoich potrzeb</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="6" cy="6" r="3"/>
+                            <path d="M8.12 8.12 12 12"/>
+                            <path d="M20 4 8.12 15.88"/>
+                            <circle cx="6" cy="18" r="3"/>
+                            <path d="M14.8 14.8 20 20"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Przycinanie Roślin</h3>
+                    <p class="service-description">Profesjonalne przycinanie drzew, krzewów i żywopłotów dla zachowania ich zdrowia i estetyki</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 0 1 0 5c-.81 0-1.8.7-2.5 0"/>
+                            <path d="M5 10c-.7-.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.81 0 1.8-.7 2.5 0"/>
+                            <path d="M12 2v20"/>
+                            <path d="M8 6h8"/>
+                            <path d="M6 10h12"/>
+                            <path d="M8 14h8"/>
+                            <path d="M10 18h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Projektowanie Ogrodów</h3>
+                    <p class="service-description">Tworzenie unikalnych projektów ogrodów dostosowanych do Twoich preferencji i warunków</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 12h20"/>
+                            <path d="M10 18V6"/>
+                            <path d="M14 18V6"/>
+                            <path d="M6 18V6"/>
+                            <path d="M18 18V6"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Pielęgnacja Trawników</h3>
+                    <p class="service-description">Kompleksowa pielęgnacja trawników - koszenie, nawożenie, aeracja i walka z chwastami</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Utrzymanie Ogrodów</h3>
+                    <p class="service-description">Regularne utrzymanie ogrodów - podlewanie, pielenie, nawożenie i ochrona roślin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">O Nas</h2>
+                    <p class="about-text">Jesteśmy zespołem doświadczonych ogrodników z pasją do tworzenia pięknych przestrzeni zielonych. Od ponad 15 lat pomagamy naszym klientom realizować marzenia o idealnym ogrodzie.</p>
+                    <p class="about-text">Nasze doświadczenie, profesjonalizm i indywidualne podejście do każdego projektu gwarantują najwyższą jakość świadczonych usług.</p>
+
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Zadowolonych klientów</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">lat doświadczenia</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Zespół Ogrodnik Pro przy pracy" class="about-img">
+                    <div class="quality-badge">
+                        <svg class="star-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <span>Najwyższa jakość</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nasze Realizacje</h2>
+                <p class="section-subtitle">Zobacz przykłady naszych prac i przekonaj się o jakości naszych usług</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Projekt ogrodu 1" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <p class="gallery-text">Nowoczesny ogród miejski</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Projekt ogrodu 2" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <p class="gallery-text">Klasyczny ogród angielski</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Projekt ogrodu 3" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <p class="gallery-text">Ogród z basenem</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1574263867128-a3d5c1b1deac?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Projekt ogrodu 4" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <p class="gallery-text">Ogród warzywny</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Projekt ogrodu 5" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <p class="gallery-text">Ogród japoński</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Projekt ogrodu 6" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <p class="gallery-text">Taras z roślinnością</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Opinie Klientów</h2>
+                <p class="section-subtitle">Zobacz co mówią o nas nasi zadowoleni klienci</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"Fantastyczna praca! Mój ogród nigdy nie wyglądał lepiej. Zespół był profesjonalny i punktualny."</p>
+                    <div class="testimonial-author">Anna Kowalska</div>
+                    <div class="testimonial-location">Warszawa</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"Polecam każdemu! Ogród został zaprojektowany dokładnie według moich oczekiwań."</p>
+                    <div class="testimonial-author">Piotr Nowak</div>
+                    <div class="testimonial-location">Kraków</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"Najlepsza firma ogrodnicza w okolicy. Szybko, profesjonalnie i w dobrej cenie."</p>
+                    <div class="testimonial-author">Maria Wiśniewska</div>
+                    <div class="testimonial-location">Gdańsk</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skontaktuj się z nami</h2>
+                <p class="section-subtitle">Gotowi do realizacji Twojego wymarzonego ogrodu? Skontaktuj się z nami już dziś!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3 class="contact-title">Telefon</h3>
+                            <p class="contact-text">+48 123 456 789</p>
+                            <p class="contact-text">+48 987 654 321</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3 class="contact-title">Email</h3>
+                            <p class="contact-text">kontakt@ogrodnikpro.pl</p>
+                            <p class="contact-text">biuro@ogrodnikpro.pl</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3 class="contact-title">Adres</h3>
+                            <p class="contact-text">ul. Ogrodowa 123</p>
+                            <p class="contact-text">00-001 Warszawa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Imię i nazwisko</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Wprowadź swoje imię i nazwisko" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Wprowadź swój adres email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefon</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="Wprowadź swój numer telefonu">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Wiadomość</label>
+                            <textarea id="message" name="message" rows="4" class="form-textarea" placeholder="Opisz swoje potrzeby ogrodnicze..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit">Wyślij wiadomość</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                        </svg>
+                        <span class="footer-logo-text">Ogrodnik Pro</span>
+                    </div>
+                    <p class="footer-description">Profesjonalne usługi ogrodnicze dla Twojego wymarzonego ogrodu. Zaufaj naszemu doświadczeniu i pasji do zieleni.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Usługi</h3>
+                    <ul class="footer-list">
+                        <li>Projektowanie ogrodów</li>
+                        <li>Pielęgnacja trawników</li>
+                        <li>Przycinanie roślin</li>
+                        <li>Utrzymanie ogrodów</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Kontakt</h3>
+                    <ul class="footer-list">
+                        <li>+48 123 456 789</li>
+                        <li>kontakt@ogrodnikpro.pl</li>
+                        <li>ul. Ogrodowa 123</li>
+                        <li>00-001 Warszawa</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 Ogrodnik Pro. Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="3ogrodnik.js"></script>
+</body>
+</html>
