@@ -264,7 +264,14 @@ h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; /* zostaje dla desktop */
+}
+
+/* Na telefonach wyłączamy fixed */
+@media (max-width: 768px) {
+  .hero-background {
+    background-attachment: scroll;
+  }
 }
 
 .hero-background::after {
